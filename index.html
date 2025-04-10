@@ -5,9 +5,10 @@
             background-color: black;
         }
         h1{
-            
-      color:aliceblue;
-      display:inline-block;
+        color:aliceblue;
+        text-align: center;
+       
+        
     }
     h2{
       color:aliceblue;
@@ -19,24 +20,54 @@
     #bip{
       border: 3px solid white;
     }
-    .abc{
-      display: inline-block;
-      margin-left: 1200px;
-     margin-bottom: ;
+    .container{
+      display: flex;
+      padding: 10px;
+      background-color:pink; 
+      gap: 15px;
+      align-items: end;
+      box-shadow: 0 20px 50px lightpink;      
     }
+    p{
+      color: aliceblue;
+    }
+   a{
+    
+    color:black;
+    
+   }
+   @media (min-width: 1250px){
+   .main{
+    flex-direction: column;
+
+   }
+   .container{
+    flex-wrap: wrap;
+   }
+  }
+  FORM{
+    color: aliceblue;
+  }
+  
     </style>
     
 </head>
 <body>
-<h1>Tissya Jain's Blog</h1>
-<img class="abc"src="./public/sssss.jpg" height="50px">
-<hr>
-<h3><a href="./public/Movie Ranking Index.html">Movie Ranking Project</a><br></h2>
-<img id="mrp" src="./Screenshot 2025-03-30 135120.png" width="400px" height="400px"><br>
+<div class="main">
+<div class="container">
+<b><a href="./public/about.html">About Me</a> </b>
+<b><a href="./public/contact.html">Contact Me</a></b>
+<b><a href="./public/Movie Ranking Index.html">Movie Ranking Project</a><br></b>
+<b><a href="./public/Bday Invite2.html">Birthday Invite Project</a><br></b>
+</div>
+<h1>Tissya Jain's Blog </h1>
+  <form method="POST" action="./Welcome page.html">     
+  Enter User Id : <input type="text" id="name" name="name">
+  Enter Password: <input type="password" id="name" name="name">
+  <br><br>
+  <input type="submit" value="Submit"> 
+  <input type="reset" value="Reset Value">
 
-<h3><a href="./public/Bday Invite2.html">Birthday Invite Project</a><br></h2>
-<img id="bip" src="./assets/images/Screenshot 2025-03-30 153534.png" width="400px" height="400px"><br><br>
-<hr>
-<a href="./public/about.html">About Me</a>
-<a href="./public/contact.html">Contact Me</a>
-</body>
+</form>
+</div>
+</body> 
